@@ -1,0 +1,10 @@
+/*添加思源黑体*/
+@font-face {
+	font-family: HanSansCN; /*自定义字体文件名*/
+	src: url('../font/SourceHanSansCN-Normal.otf'); /*这里是字体文件路径*/
+}
+
+/* 全局 */
+div,button,span,p,h1,h2,h3,h4,h5,h6,body{
+	font-family: HanSansCN!important;//全局
+}
