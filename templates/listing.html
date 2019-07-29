@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8"/>
@@ -13,12 +13,25 @@
     <link rel="stylesheet" href="assets/libraries/bootstrap-fileupload/bootstrap-fileupload.css" type="text/css">
     <link rel="stylesheet" href="assets/libraries/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/realia-blue.css" type="text/css" id="color-variant-default">
+         <link href="css/font.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
     <title>Ezywipe - Shop</title>
 
 </head>
 <body>
+<style>.lists{ overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 
+    }
+    .properties-grid .property .image img{
+        width:280px;
+        height:250px;
+    }
+</style>
 <div id="wrapper-outer" >
     <div id="wrapper">
         <div id="wrapper-inner">
@@ -30,7 +43,7 @@
                                 <li><a href="index.html">Home</a></li>
                             </ul><!-- /.breadcrumb -->
 
-                           
+
                         </div><!-- /.span12 -->
                     </div><!-- /.row -->
                 </div><!-- /.container -->
@@ -45,7 +58,6 @@
                                 <div class="navbar-inner">
                                     <div class="row">
                                         <div class="logo-wrapper span4">
-                                            <a href="#nav" class="hidden-desktop" id="btn-nav">Toggle navigation</a>
 
                                             <div class="logo">
                                                 <a href="index.html" title="Home">
@@ -64,13 +76,14 @@
 
                                         <div class="info">
                                             <div class="site-email">
-                                                <a href="mailto:info@byaviators.com">info@byaviators.com</a>
+                                                <a href="mailto:info@ezywipe.com">info@ezywipe.com</a>
                                             </div><!-- /.site-email -->
 
                                             <div class="site-phone">
-                                                <span>333-666-777</span>
+                                                <span>1 866 3998867</span>
                                             </div><!-- /.site-phone -->
                                         </div><!-- /.info -->
+
 
                                     </div><!-- /.row -->
                                 </div><!-- /.navbar-inner -->
@@ -89,175 +102,175 @@
     <div id="main">
         <div class="row">
             <div class="span9">
-			
+
                 <h1 class="page-header">Listing</h1>
                 <div class="properties-grid">
     <div class="row">
-	
-	
-	
+
+
+
 	<!-- content -->
         <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a class = "lists"href="detail.html">商品1</a>
-                    <img src="assets/img/tmp/property-small-1.png" alt="">
+                    <a href={{obj.link1}}></a>
+                    <img src={{obj.pic1}} alt="">
                 </div><!-- /.content -->
 
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price1}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a  class = "lists" href="detail.html" >商品1</a></h2>
+                <h2><a  class = "lists" href={{obj.link1}} >{{obj.name1}}</a></h2>
             </div><!-- /.title -->
 
-          
+
         </div><!-- /.property -->
 
         <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-2.png" alt="">
+                    <a href={{obj.link2}}></a>
+                    <img src={{obj.pic2}} alt="">
                 </div><!-- /.content -->
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price2}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a  class = "lists"  href={{obj.link2}}>{{obj.name2}}</a></h2>
             </div><!-- /.title -->
 
-           
+
         </div><!-- /.property -->
 
         <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-3.png" alt="">
+                    <a href={{obj.link3}}></a>
+                    <img src={{obj.pic3}} alt="">
                 </div><!-- /.content -->
 
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price3}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a class = "lists"  href={{obj.link3}}>{{obj.name3}}</a></h2>
             </div><!-- /.title -->
 
-   
-           
+
+
         </div><!-- /.property -->
 
         <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-4.png" alt="">
+                    <a href={{obj.link4}}></a>
+                    <img src={{obj.pic4}} alt="">
                 </div><!-- /.content -->
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price4}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a class = "lists"  href={{obj.link4}}>{{obj.name4}}</a></h2>
             </div><!-- /.title -->
 
-            
+
         </div><!-- /.property -->
 
         <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-5.png" alt="">
+                    <a href={{obj.link5}}></a>
+                    <img src={{obj.pic5}} alt="">
                 </div><!-- /.content -->
 
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price5}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a class = "lists"  href={{obj.link5}}>{{obj.name5}}</a></h2>
             </div><!-- /.title -->
 
-           
-            
+
+
         </div><!-- /.property -->
 
         <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-6.png" alt="">
+                    <a href={{obj.link6}}></a>
+                    <img src={{obj.pic6}} alt="">
                 </div><!-- /.content -->
 
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price6}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a class = "lists"  href={{obj.link6}}>{{obj.name6}}</a></h2>
             </div><!-- /.title -->
 
-            
+
         </div><!-- /.property -->
 		    <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-5.png" alt="">
+                    <a href={{obj.link7}}></a>
+                    <img src={{obj.pic7}} alt="">
                 </div><!-- /.content -->
 
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price7}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a class = "lists"  href={{obj.link7}}>{{obj.name7}}</a></h2>
             </div><!-- /.title -->
 
-           
-            
+
+
         </div><!-- /.property -->    <div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-5.png" alt="">
+                    <a href={{obj.link8}}></a>
+                    <img src={{obj.pic8}} alt="">
                 </div><!-- /.content -->
 
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price8}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a class = "lists"  href={{obj.link8}}>{{obj.name8}}</a></h2>
             </div><!-- /.title -->
 
-           
-            
+
+
         </div><!-- /.property -->
 		<div class="property span3">
             <div class="image">
                 <div class="content">
-                    <a href="detail.html"></a>
-                    <img src="assets/img/tmp/property-small-5.png" alt="">
+                    <a href={{obj.link9}}></a>
+                    <img src={{obj.pic9}} alt="">
                 </div><!-- /.content -->
 
-                <div class="price">1 250 000€</div><!-- /.price -->
+                <div class="price">{{obj.price9}}</div><!-- /.price -->
                 <div class="reduced">Price </div><!-- /.reduced -->
             </div><!-- /.image -->
 
             <div class="title">
-                <h2><a href="detail.html">27523 Pacific Coast</a></h2>
+                <h2><a class = "lists"  href={{obj.link9}}>{{obj.name9}}</a></h2>
             </div><!-- /.title -->
         </div><!-- /.property -->
-		
-			
+
+
 	<!-- content -->
-		
+
     </div><!-- /.row -->
 </div><!-- /.properties-grid -->
                 <div class="pagination pagination-centered">
@@ -303,7 +316,7 @@
     </div><!-- /#content -->
 </div><!-- /#wrapper-inner -->
 
- 
+
 
 
 

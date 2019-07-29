@@ -1,9 +1,20 @@
-<html>
-<head>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
-  <li class="nav-item">
-                        <a class="nav-link scroll hvr-overline-from-center scroll" href="guice.pdf">CATALOG</a>
-                    </li>
+<a href="index.html">段落1</a>
+<p>段落2</p>
+<p>段落3</p>
+<p>段落4</p>
+<p>段落5</p>
+<script type="text/javascript">
+    //获取当前点击的对象
+    $('a').click(
+        function(){
+            //this表示当前被点击元素，但是此时我们当做dom对象
+            //window.alert(this.innerHTML);
+            //$(this) 表示当前被点击元素，但是此时我们当做jquery对象
+            window.alert($(this).html());
+            //window.alert('ok');
+        });
+</script>
 </body>
-</html>
