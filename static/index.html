@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
+<script type="text/javascript">
+ 
+
+
     <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
     <title>Ezywipe</title>
@@ -20,7 +24,13 @@
     <!--//meta tags ends here-->
     <!-- bootstrap style sheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/font.css" rel="stylesheet" type="text/css" />
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" rel="stylesheet"/>
+		<style>
+			body,h1,h2,h3,h4,h5,h6,a,span,div,p,span,label,input{
+				font-family: "Noto Sans SC","PingFang SC","Lantinghei SC","Microsoft YaHei",arial,"\5b8b\4f53",sans-serif, tahoma,Arial, Helvetica, sans-serif;
+				font-weight: 400;
+			}
+		</style>
     <!-- fontawesome -->
     <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
     <!-- Popup css (for Video Popup) -->
@@ -43,8 +53,9 @@
 </head>
 
 <body>
+
     <!-- nav -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light"  style="font-size: 17px;letter-spacing: 0.009em;">
 			<a class="navbar-brand" href="#">
 				<img alt="Brand" src="./image_ezywipe/logo.png">
 			</a>
@@ -165,7 +176,7 @@
                         Ezywipe is a worldwide brand.</p>
                 </div>
                 <div class="col-md-6 about-rcaight">
-                    <img src="images/ab.jpg" alt="image" />
+                    <img src="images/ab.jpg" style="width: 100%;height: auto;" alt="image" />
                 </div>
             </div>
         </div>
@@ -314,7 +325,7 @@
             <div class="text-h3 text-center">
                 <h3>CLIENTS</h3>
             </div>
-            <img src="image_ezywipe/client.png"/>
+            <img src="image_ezywipe/client.png" style="width: 100%;height: auto;"/>
         </div>
     </div>
     <!--//clients-->
@@ -324,7 +335,7 @@
             <div class="text-h3 text-center">
                 <h3>cerfificate</h3>
             </div>
-            <img src="image_ezywipe/cerfificate.png"/>
+            <img src="image_ezywipe/cerfificate.png" style="width: 100%;height: auto;"/>
         </div>
     </div>
         <div class="videowindow" id="video">
@@ -332,7 +343,7 @@
             <div class="text-h4 text-center" id="video-text">
                 <h3 style="font-size: 2.6rem;letter-spacing: 5px;">VIDEO</h3>
             </div>
-            <video id="my-video" class="video-js" controls preload="auto" width="960" height="400" poster="m.jpg" data-setup="{}">
+            <video id="my-video" class="video-js" controls preload="auto" style="width: 100%;height: auto;" poster="m.jpg" data-setup="{}">
                 <source src="../video/介绍.mp4" type="video/mp4">
 			</video>
         </div>

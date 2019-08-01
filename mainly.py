@@ -57,7 +57,6 @@ def shop():
                             goindex = request.args.get('goindex')
                             cursor.execute('select name,price,content from retail where id =' +goindex + ";")
                             res = cursor.fetchall()
-#                            print (res , 'select name,price,content from retail where id =' +goindex + ";")
                             obj['name'] = res[0][0]#获取name ，price，content等信息
                             obj['Price'] = res[0][1]
                             obj['content'] = res[0][2]

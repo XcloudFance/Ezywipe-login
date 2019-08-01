@@ -1,7 +1,7 @@
-/*添加思源黑体*/
+﻿/*添加思源黑体*/
 @font-face {
 	font-family: HanSansCN; /*自定义字体文件名*/
-	src: url('../font/SourceHanSansCN-Normal.otf'); /*这里是字体文件路径*/
+	src: url('https://fonts.googleapis.com/css?family=Noto+Sans+SC'); /*这里是字体文件路径*/
 }
 
 /* 全局 */
